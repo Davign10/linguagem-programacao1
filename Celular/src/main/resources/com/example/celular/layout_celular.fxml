@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.celular.CelularController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #000080;">
+            <children>
+                <Label layoutX="313.0" layoutY="61.0" text="PROPIEDADES DO CELULAR" textFill="#f57c00">
+                    <font>
+                        <Font size="60.0" />
+                    </font>
+                </Label>
+                <Label layoutX="322.0" layoutY="300.0" text="MODELO: " textFill="#f57c00">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="campoModelo" layoutX="436.0" layoutY="304.0" prefHeight="25.0" prefWidth="200.0" stylesheets="@../../../Styles2.css" />
+                <Label layoutX="359.0" layoutY="401.0" text="TELA: " textFill="#f57c00">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="campoTela" layoutX="436.0" layoutY="404.0" prefHeight="25.0" prefWidth="200.0" stylesheets="@../../../Styles2.css" />
+                <Label layoutX="825.0" layoutY="401.0" text="GIGABYTE:" textFill="#f57c00">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="campoGigabyte" layoutX="945.0" layoutY="404.0" prefHeight="25.0" prefWidth="95.0" stylesheets="@../../../Styles2.css" />
+                <TextField fx:id="campoCor" layoutX="436.0" layoutY="504.0" prefHeight="25.0" prefWidth="200.0" stylesheets="@../../../Styles2.css" />
+                <Label layoutX="364.0" layoutY="501.0" text="COR:" textFill="#f57c00">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="816.0" layoutY="300.0" text="TAMANHO: " textFill="#f57c00">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="campoTamanho" layoutX="945.0" layoutY="304.0" prefHeight="25.0" prefWidth="95.0" stylesheets="@../../../Styles2.css" />
+                <Button fx:id="botaoSalvar" layoutX="1040.0" layoutY="603.0" mnemonicParsing="false" onAction="#salvarDados" prefHeight="30.0" prefWidth="110.0" stylesheets="@../../../Styles.css" text="SALVAR" />
+                <Button fx:id="botaoVisualizar" layoutX="1171.0" layoutY="603.0" mnemonicParsing="false" onAction="#visualizarDados" prefHeight="30.0" prefWidth="115.0" stylesheets="@../../../Styles.css" text="VISUALIZAR" />
+                <Label layoutX="835.0" layoutY="501.0" text="CELULAR:" textFill="#f57c00" visible="false">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="campoCelular" layoutX="945.0" layoutY="505.0" prefHeight="25.0" prefWidth="95.0" visible="false" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
