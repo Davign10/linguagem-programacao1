@@ -4,11 +4,11 @@ public class Celular {
 
     // atributos
 
-    private String cor;
-    private String modelo;
-    private String tela;
-    private String tamanho;
-    private String gigabyte;
+    private static String cor;
+    private static String modelo;
+    private static String tela;
+    private static String tamanho;
+    private static String gigabyte;
 
     // métodos de acesso
 
